@@ -62,6 +62,7 @@ export default class GameScene extends cc.Component {
     }
 
     onBackBtn () {
+        console.log("进入开始界面");
         cc.director.loadScene("StartScene");
     }
 
