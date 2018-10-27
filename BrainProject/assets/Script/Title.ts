@@ -14,7 +14,7 @@ let tips = new Tips();
 let utils = new Utils();
 
 @ccclass
-export default class Title0 extends cc.Component {
+export default class Title extends cc.Component {
 
     @property(cc.Label)
     label: cc.Label = null;
@@ -51,7 +51,7 @@ export default class Title0 extends cc.Component {
         choiceAnswer = index;
         if(rightAnswer[level-1] == choiceAnswer){
             console.log("选择正确");
-            console.log(utils.getInt("winLevel",1));
+            console.log("当前正在通关的关卡：第" + utils.getInt("winLevel",1) + "关");
             if(utils.getInt("winLevel",1) >= level){
                 utils.setInt("winLevel",utils.setInt("winLevel",1)+1);
             }else{

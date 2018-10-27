@@ -55,6 +55,9 @@ export default class GameScene extends cc.Component {
             canvas.addChild(title);
             title.x = 0;
             title.y = 80;
+        }else{
+            console.log("没有下一关了");
+            return;
         }
         
         
